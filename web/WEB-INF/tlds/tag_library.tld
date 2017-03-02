@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+    <tlib-version>1.0</tlib-version>
+    <short-name>f</short-name>
+    <uri>WEB-INF/tlds/tag_library</uri>
+    <function>
+        <name>addList</name>
+        <function-class>sem5.lab.web.Utils</function-class>
+        <function-signature>void addList(java.util.List)</function-signature>
+    </function>
+    <function>
+        <name>addEnt</name>
+        <function-class>sem5.lab.web.Utils</function-class>
+        <function-signature>void addEnt(java.lang.String)</function-signature>
+    </function>
+    <function>
+        <name>avCost</name>
+        <function-class>sem5.lab.web.Utils</function-class>
+        <function-signature>java.lang.Integer avCost(java.lang.String,java.lang.String)</function-signature>
+    </function>
+    <function>
+        <name>avCostCart</name>
+        <function-class>sem5.lab.web.Utils</function-class>
+        <function-signature>java.lang.Integer avCostCart(java.util.ArrayList)</function-signature>
+    </function>
+</taglib>
