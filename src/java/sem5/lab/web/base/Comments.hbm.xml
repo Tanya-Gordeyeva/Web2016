@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="sem5.lab.web.base.Comments" table="comments" catalog="history" optimistic-lock="version">
+        <id name="date_time" type="string">
+            <column name="DATE_TIME" length="45" not-null="true"/>
+        </id>
+        <property name="comment" type="string">
+            <column name="COMMENT" length="65535" not-null="true" />
+        </property>
+        <property name="user" type="string">
+            <column name="USER" length="65535" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

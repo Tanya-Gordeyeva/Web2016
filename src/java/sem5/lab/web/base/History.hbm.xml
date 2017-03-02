@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 06.11.2016 19:15:08 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="sem5.lab.web.base.History" table="history" catalog="history" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="product" type="string">
+            <column name="PRODUCT" length="65535" not-null="true" />
+        </property>
+        <property name="market" type="string">
+            <column name="MARKET" length="65535" not-null="true" />
+        </property>
+        <property name="user" type="string">
+            <column name="USER" length="65535" not-null="true" />
+        </property>
+        <property name="amount" type="int">
+            <column name="AMOUNT" not-null="true" />
+        </property>
+        <property name="date" type="date">
+            <column name="DATE" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
